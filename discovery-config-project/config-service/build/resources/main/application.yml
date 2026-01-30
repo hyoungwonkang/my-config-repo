@@ -1,0 +1,15 @@
+server:
+  port: 8888 # Config server 관례상 포트
+
+spring:
+  application:
+    name: config-service
+
+  # Config Server
+  # Github 주소와 검색할 브랜치
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hyoungwonkang/my-config-repo.git
+          default-label: main

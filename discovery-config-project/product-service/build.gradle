@@ -1,0 +1,10 @@
+dependencies {
+	// Web Server. Spring Web.
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+	// Source: https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	
+	implementation 'com.sun.jersey:jersey-client:1.19.4'
+	implementation 'com.sun.jersey.contribs:jersey-apache-client4:1.19.4'
+}

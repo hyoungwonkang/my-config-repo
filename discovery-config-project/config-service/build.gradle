@@ -1,0 +1,5 @@
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// Source: https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server
+	implementation 'org.springframework.cloud:spring-cloud-config-server'
+}

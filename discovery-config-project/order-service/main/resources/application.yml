@@ -1,0 +1,8 @@
+spring:
+  application:
+    # Eureka server 등록 시: ORDER-SERVICE
+    # Eureka server 검색 시: order-service.yml
+    name: order-service
+  config:
+    import:
+    - optional:configserver:http://localhost:8888

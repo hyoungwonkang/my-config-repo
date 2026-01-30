@@ -1,0 +1,26 @@
+server:
+  port: 8761 # Eureka Server 관례상 포트
+
+spring:
+  application:
+    name: discovery-service
+
+# Eureka Server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # Eureka Server 자신을 Eureka Server가 관리하는 서비스 목록에 등록할 것인가?
+    register-with-eureka: false
+
+    # Eureka Server 정보가 저장된 레지스트리로부터 서비스 정보를 가져올 것인가?
+    fetch-registry: false
+
+  server:
+    # 자기 보존 모드 (던전 모드)
+    # 갑자기 서비스가 죽어도 대시보드에서 계속 UP 상태로 남겨 두는 것 (좀비 서버)
+    # 개발 시 false, 운영 시 true 권장
+    enable-self-preservation: false
+    
+    # 종료 된 서비스를 3초 후 대시보드 목록에서 제거
+    eviction-interval-timer-in-ms: 3000
